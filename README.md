@@ -6,7 +6,8 @@ My background is around five years in operations management, where I worked hand
 
 # Projects
 <!-- Project	What it shows	Tools	Link| -->
-Global Medical Doctor Workforce Dashboard	Distribution and trends of medical doctors across 194 countries, using WHO data	Power BI, Power Query, DAX, star schema	Open project
+- Global Medical Doctor Workforce Dashboard.	Distribution and trends of medical doctors across 194 countries, using WHO data	Power BI, Power Query, DAX, star schema	Open project
+- Squirrel App. 
 <!-- Copy this row when you add a new project: | **Project name** | One sentence about what it shows | Tools | [Open project](folder/project-name) | -->
 
 More projects will be added over time.
