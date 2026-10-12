@@ -1,8 +1,9 @@
-Global Medical Doctor Workforce Dashboard (WHO data)
+#Global Medical Doctor Workforce Dashboard (WHO data)
 
 An interactive Power BI dashboard that explores how the world's medical doctor workforce is distributed across 194 countries and how it has changed over time.
 
-Show Image
+<img width="737" height="732" alt="image" src="https://github.com/user-attachments/assets/888de2bb-ed58-4985-b4eb-6c39c52e2133" />
+
 
 Disclaimer: This is an independent portfolio project. It is not endorsed by, or affiliated with, the World Health Organization (WHO).
 
