@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Keep this at the very top
+st.set_page_config(page_title="Central Park Squirrel Tracker", layout="wide", page_icon="🐿️")
+
+# --- FIXED CLOUD PATHS ---
+# Tell Streamlit to navigate into the subfolders from the repository root
+fact_df = pd.read_csv("Squirrel app/Data/fact_observations.csv")
+dim_squirrel_df = pd.read_csv("Squirrel app/Data/dim_squirrel.csv")
+dim_location_df = pd.read_csv("Squirrel app/Data/dim_location.csv")
+dim_time_df = pd.read_csv("Squirrel app/Data/dim_time.csv")
 # 1. VEEBILEHE SEADISTUS
 st.set_page_config(page_title="Central Park Squirrel Tracker", layout="wide", page_icon="🐿️")
 
