@@ -75,10 +75,10 @@ Guide and info: where the data comes from, how it was prepared, key insights, ho
 
 
 # Key insights
-The workforce is concentrated. China, India, the USA, Russia and Brazil hold about 51% of the 14.8 million doctors. China alone holds about 27%.
+The workforce is concentrated into China, India, the USA, Russia and Brazil, which hold about 51% of the 14.8 million doctors. China alone holds about 27%.
 Africa has a very small share. It holds about 2.6% of all doctors. Its average density is about 3.6 per 10,000, compared with about 39.5 in Europe.
 Many countries have low density. 70 of 194 countries (36%) have fewer than 10 doctors per 10,000 people.
-Density is generally rising. For example, Africa's average rose from about 1.3 in 1990 to 3.5 in 2023, but regional gaps remain large.
+Density is in a rising trend. For example, Africa's average rose from about 1.3 in 1990 to 3.5 in 2023, but regional gaps remain large.
 The specialist share varies. Among countries that report both categories, specialists make up about 77% of generalist-plus-specialist doctors in Europe and about 24% in Africa.
 Limitations
 The "latest year" differs by country (2020 to 2024), so the figures are not a snapshot of a single year.
@@ -86,7 +86,8 @@ Fewer countries reported in 2024 (72) than in 2023 (117), so trend lines stop at
 Trend lines are averages of the countries that reported in each year, and that mix changes over time.
 Doctors per 10,000 cannot be summed across countries, so regional values are simple averages and not population-weighted.
 Very small countries (such as Monaco and Andorra) can have unusually high rates.
-Tools
+
+# Tools
 
 Power BI Desktop, Power Query, DAX, star schema data modelling.
 
@@ -108,7 +109,7 @@ Repository contents
 
 # How I used AI in this project
 
-I used Claude (Anthropic’s AI assistant) as a coding and design partner while building this project. I made the decisions, built everything in Power BI myself and checked the results.
+I used Claude (Anthropic’s AI assistant) as a coding and design partner while building this project. I made the decisions, built everything in Power BI myself and checked the results. It took me approximately half a day to put this together. Without the assistance of Claude, it would have taken me longer.
 
 What Claude helped me with:
 
@@ -121,12 +122,13 @@ Helping draft the Info page text and this README, which I edited
 What I did:
 
 Cleaned the data in Power Query, built the model and relationships, and wrote and tested the measures in Power BI
-Designed and formatted every visual
+Designed and formatted all visuals
 Checked the numbers against the data and decided which insights to include
 Chose the final wording
+
 ## About me
 
-I'm Kristel, based in Tallinn, Estonia. I have around five years of experience in operations management and I'm moving into data analytics.
+I'm Kristel, a data analyst, based in Tallinn, Estonia. I have around five years of experience in operations management and I'm moving into data analytics.
 
-LinkedIn: <!-- add your link -->
-Contact: <!-- add your email or leave out -->
+LinkedIn: [<!-- add your link -->](https://www.linkedin.com/in/kristel-kuusik-474a8514b/)
+
