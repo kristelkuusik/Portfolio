@@ -1,4 +1,3 @@
-pandas
 streamlit
-plotly
-duckdb
+pandas
+plotly>=5.24

@@ -1,18 +1,24 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path
 
 # Keep this at the very top
 st.set_page_config(page_title="Central Park Squirrel Tracker", layout="wide", page_icon="🐿️")
 
-# --- FIXED CLOUD PATHS ---
-# Tell Streamlit to navigate into the subfolders from the repository root
-fact_df = pd.read_csv("Squirrel app/Data/fact_observations.csv")
-dim_squirrel_df = pd.read_csv("Squirrel app/Data/dim_squirrel.csv")
-dim_location_df = pd.read_csv("Squirrel app/Data/dim_location.csv")
-dim_time_df = pd.read_csv("Squirrel app/Data/dim_time.csv")
-# 1. VEEBILEHE SEADISTUS
-st.set_page_config(page_title="Central Park Squirrel Tracker", layout="wide", page_icon="🐿️")
+# --- FILE PATHS ---
+# Find the data folder relative to THIS file, so the app works no matter
+# where the folder is moved to (locally or on Streamlit Cloud).
+# Folder names are case-sensitive on Streamlit Cloud (Linux), so both
+# "data" and "Data" are checked.
+BASE_DIR = Path(__file__).resolve().parent
+_candidates = [
+    BASE_DIR / "data",
+    BASE_DIR / "Data",
+    BASE_DIR / "Squirrel app" / "data",
+    BASE_DIR / "Squirrel app" / "Data",
+]
+DATA_DIR = next((p for p in _candidates if p.is_dir()), None)
 
 # KOHANDATUD STIIL (CSS) - Beež taust, oravapruun külgriba ja valged sisukaardid
 st.markdown("""
@@ -56,10 +62,10 @@ st.markdown("Welcome to the squirrel observation data analysis app! Use the left
 # 2. ANDMETE LAADIMINE MÄLLU (Võetakse sinu loodud dim/fact mudel)
 @st.cache_data
 def load_clean_data():
-    fact = pd.read_csv("fact_observations.csv")
-    dim_sq = pd.read_csv("dim_squirrel.csv")
-    dim_loc = pd.read_csv("dim_location.csv")
-    dim_t = pd.read_csv("dim_time.csv")
+    fact = pd.read_csv(DATA_DIR / "fact_observations.csv")
+    dim_sq = pd.read_csv(DATA_DIR / "dim_squirrel.csv")
+    dim_loc = pd.read_csv(DATA_DIR / "dim_location.csv")
+    dim_t = pd.read_csv(DATA_DIR / "dim_time.csv")
     
     # Liidame dimensioonid faktitabeliga kokku, et filtreerimine ja graafikud töötaksid sujuvalt
     full_df = fact.merge(dim_sq, on="Squirrel_Profile_ID", how="left")
@@ -79,6 +85,14 @@ def load_clean_data():
     # ==========================================
     
     return full_df
+
+if DATA_DIR is None:
+    st.error(
+        "Could not find the data folder. Put the four CSV files "
+        "(fact_observations, dim_squirrel, dim_location, dim_time) in a folder "
+        f"called 'data' next to {Path(__file__).name}."
+    )
+    st.stop()
 
 df = load_clean_data()
 
@@ -192,3 +206,4 @@ st.dataframe(
     filtered_df[["Unique Squirrel ID", "Age", "Primary_Fur_Color", "Location", "Shift", "Running", "Eating"]].head(50),
     hide_index=True
 )
+
