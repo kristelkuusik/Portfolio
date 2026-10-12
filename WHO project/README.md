@@ -88,7 +88,7 @@ Doctors per 10,000 cannot be summed across countries, so regional values are sim
 Very small countries (such as Monaco and Andorra) can have unusually high rates.
 Tools
 
-# Power BI Desktop, Power Query, DAX, star schema data modelling.
+Power BI Desktop, Power Query, DAX, star schema data modelling.
 
 # How to open the report
 Download WHO_Medical_Workforce_Dashboard.pbix.
@@ -105,6 +105,25 @@ Repository contents
     ├── 01-dashboard.png
     ├── 02-info-page.png
     └── 03-star-schema.png
+
+# How I used AI in this project
+
+I used Claude (Anthropic’s AI assistant) as a coding and design partner while building this project. I made the decisions, built everything in Power BI myself and checked the results.
+
+What Claude helped me with:
+
+Suggesting the star schema design (which columns go in the fact and dimension tables)
+Drafting DAX measures and explaining how they work
+Suggesting the dashboard layout, chart types and a colour palette
+Troubleshooting errors along the way (for example, a relationship error caused by duplicate keys, and a page filter that was changing my totals)
+Helping draft the Info page text and this README, which I edited
+
+What I did:
+
+Cleaned the data in Power Query, built the model and relationships, and wrote and tested the measures in Power BI
+Designed and formatted every visual
+Checked the numbers against the data and decided which insights to include
+Chose the final wording
 ## About me
 
 I'm Kristel, based in Tallinn, Estonia. I have around five years of experience in operations management and I'm moving into data analytics.
