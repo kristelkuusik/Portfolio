@@ -7,7 +7,7 @@ An interactive Power BI dashboard that explores how the world's medical doctor w
 
 Disclaimer: This is an independent portfolio project. It is not endorsed by, or affiliated with, the World Health Organization (WHO).
 
-## Project goal
+# Project goal
 
 To practise the full analytics workflow, from a raw flat table to a clean data model and a finished report, using real public health data. The dashboard answers questions like:
 
@@ -15,7 +15,7 @@ How many doctors are there worldwide, and where are they?
 Which regions and countries have the highest and lowest doctor density?
 How has doctor density changed since 1990?
 
-## Data source
+# Data source
 
 World Health Organization, National Health Workforce Accounts (NHWA) data portal, December 2025 update. Portal: https://apps.who.int/nhwaportal
 
@@ -30,7 +30,7 @@ HWF_0005	Medical doctors not further defined (number)
 
 Data is reused with attribution, in line with WHO's terms for its datasets. See https://data.who.int for the current terms of use.
 
-## What process step by step
+# My process step by step
 
 # 1. Cleaned the data (Power Query)
 
@@ -88,7 +88,7 @@ Doctors per 10,000 cannot be summed across countries, so regional values are sim
 Very small countries (such as Monaco and Andorra) can have unusually high rates.
 Tools
 
-## Power BI Desktop, Power Query, DAX, star schema data modelling.
+# Power BI Desktop, Power Query, DAX, star schema data modelling.
 
 # How to open the report
 Download WHO_Medical_Workforce_Dashboard.pbix.
