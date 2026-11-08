@@ -39,7 +39,7 @@ I use AI assistance (Claude, from Anthropic) in some of my projects, for example
 The projects use public data. Each project README names its source and gives the required credit. These are independent projects and are not endorsed by the organisations that publish the data.
 
 Contact
-LinkedIn:[ <!-- add your link -->](https://www.linkedin.com/in/kristel-kuusik-474a8514b/)
+LinkedIn:https://www.linkedin.com/in/kristel-kuusik-474a8514b/
 
 
 I'm happy to talk about any of the projects, and I welcome feedback.
