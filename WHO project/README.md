@@ -2,7 +2,7 @@
 
 An interactive Power BI dashboard that explores how the world's medical doctor workforce is distributed across 194 countries and how it has changed over time.
 
-<img width="727" height="722" alt="image" src="https://github.com/user-attachments/assets/15135164-0253-4daf-b44c-289740a462b4" />
+!<img width="727" height="722" alt="image" src="https://github.com/user-attachments/assets/15135164-0253-4daf-b44c-289740a462b4" />
 
 
 
