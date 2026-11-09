@@ -72,9 +72,6 @@ The "latest" measures use each country's most recent reported year, so values ar
 Global Doctors Overview: KPI cards, region and country slicers, a filled map, a regional bar chart, a trend line by region and a Top 10 chart.
 Guide and info: where the data comes from, how it was prepared, key insights, how to read the dashboard, and limitations.
 
-<img width="1167" height="722" alt="image" src="https://github.com/user-attachments/assets/66de959c-7615-49c2-9ae9-62055212bb92" />
-
-
 # Key insights
 The workforce is concentrated into China, India, the USA, Russia and Brazil, which hold about 51% of the 14.8 million doctors. China alone holds about 27%.
 Africa has a very small share. It holds about 2.6% of all doctors. Its average density is about 3.6 per 10,000, compared with about 39.5 in Europe.
@@ -131,5 +128,5 @@ Chose the final wording
 
 I'm Kristel, a data analyst, based in Tallinn, Estonia. I have around five years of experience in operations management and I'm moving into data analytics.
 
-LinkedIn: [<!-- add your link -->](https://www.linkedin.com/in/kristel-kuusik-474a8514b/)
+LinkedIn: [Kristel Kuusik](https://linkedin.com)
 
