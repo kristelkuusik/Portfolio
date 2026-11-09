@@ -49,7 +49,7 @@ Dim_Year	Dimension	Year, Decade
 
 All relationships are one-to-many, with single-direction filtering from each dimension to the fact table. The grain of the fact table is one row per country, indicator and year.
 
-<img width="657" height="631" alt="image" src="https://github.com/user-attachments/assets/df42f0a6-94c1-4189-993d-22fbfac69a6c" />
+![star_schema](star_schema.png)
 
 
 # 3. Wrote DAX measures
